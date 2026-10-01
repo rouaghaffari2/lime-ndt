@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lime_ndt"
+version = "0.2.0"
+description = "Enhancing LIME through Neural Decision Trees"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.9"
+authors = [
+    { name = "Mohamed Aymen BOUYAHIA", email = "mohamed-aymen.bouyahia@ensta-paris.fr" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "keras",
+    "tensorflow",
+]
+
+[project.urls]
+Homepage = "https://github.com/aymen20002005/lime_ndt"
+Repository = "https://github.com/aymen20002005/lime_ndt"
+Issues = "https://github.com/aymen20002005/lime_ndt/issues"
+
+[tool.setuptools.packages.find]
+include = ["lime_ndt*"]
+exclude = ["lime_ndt.tests*"]
+
+[tool.setuptools.package-data]
+lime_ndt = ["bundle.js"]
